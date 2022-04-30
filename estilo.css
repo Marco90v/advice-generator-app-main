@@ -99,7 +99,6 @@ body{
         font-size: 28px;
     }
     .generator{
-        transition: 0.5 ease-in all;
         box-shadow: 0 0 0px 0px hsl(150deg 100% 66% / 50%);
         transition: 0.1s ease all ;
     }
