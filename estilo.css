@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Outfit:wght@400;700&display=swap');
+
 :root{
     --lightCyan: hsl(193, 38%, 86%);
     --neonGreen: hsl(150, 100%, 66%);
@@ -5,6 +7,98 @@
     --darkGrayishBlue: hsl(217, 19%, 24%);
     --darkBlue: hsl(218, 23%, 16%);
 }
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 body{
+    font-family: 'Manrope', sans-serif;
+    /* font-size: 28px; */
     background-color: var(--darkBlue);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 341px;
+    height: 310px;
+    min-width: 341px;
+    min-height: 310px;
+    max-width: 341px;
+    max-height: 310px;
+
+    background-color: var(--darkGrayishBlue);
+    border-radius: 10px;
+    position: relative;
+}
+.card h1{
+    margin-top: 2.5rem;
+    color: var(--neonGreen);
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.2rem;
+}
+.card p{
+    color: var(--lightCyan);
+    margin: 1rem;
+    text-align: center;
+    font-size: 25px;
+}
+.divider{
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.divider img{
+    display: block;
+}
+.generator{
+    background-color: var(--neonGreen);
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -30px;
+}
+.generator img {
+    margin: 33%;
+}
+.attribution {
+    position:absolute;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:560px) {
+    .card{
+        width: 523px;
+        height: 300px;
+        min-width: 523px;
+        min-height: 300px;
+        max-width: 523px;
+        max-height: 300px;
+    }
+    .card p{
+        margin: 1rem 2rem;
+        font-size: 28px;
+    }
+    .generator{
+        transition: 0.5 ease-in all;
+        box-shadow: 0 0 0px 0px hsl(150deg 100% 66% / 50%);
+        transition: 0.1s ease all ;
+    }
+    .generator:hover {
+        cursor: pointer;
+        box-shadow: 0 0 30px 10px hsl(150deg 100% 66% / 50%);
+    }
 }

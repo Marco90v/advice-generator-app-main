@@ -8,22 +8,27 @@
   <link rel="stylesheet" href="./estilo.css">
   
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  
-
-  
+    <div class="card">
+      <h1 id="advice">ADVICE #0</h1>
+      <p id="frase"></p>
+      <picture class="divider">
+        <source media="(max-width: 376px)" srcset="./images/pattern-divider-mobile.svg">
+        <source media="(min-width: 560px)" srcset="./images/pattern-divider-desktop.svg">
+        <img src="./images/pattern-divider-mobile.svg" alt="separador">
+      </picture>
+      <button class="generator" onclick="random()">
+        <img src="./images/icon-dice.svg" alt="">
+      </button>
+    </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://marco90v.github.io/Portafolio/">Marco Velasquez Figarella</a>.
   </div>
+
+  <script src="./script.js" type="text/javascript"></script>
 </body>
 </html>
