@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Advice generator app</title>
 </head>
 <body>
-
+  <main>
     <div class="card">
       <h1 id="advice">ADVICE #0</h1>
       <p id="frase"></p>
@@ -19,16 +19,16 @@
         <source media="(min-width: 560px)" srcset="./images/pattern-divider-desktop.svg">
         <img src="./images/pattern-divider-mobile.svg" alt="separador">
       </picture>
-      <button class="generator" onclick="random()">
-        <img src="./images/icon-dice.svg" alt="">
+      <button id="generator" class="generator" onclick="random()">
+        <img src="./images/icon-dice.svg" alt="dado">
       </button>
     </div>
-  
-  <div class="attribution">
+  </main>
+  <div role="contentinfo" class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://marco90v.github.io/Portafolio/">Marco Velasquez Figarella</a>.
   </div>
-
-  <script src="./script.js" type="text/javascript"></script>
+  
+  <script src="./script.js"></script>
 </body>
 </html>

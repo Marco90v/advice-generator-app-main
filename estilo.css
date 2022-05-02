@@ -80,7 +80,8 @@ body{
     position:absolute;
     bottom: 10px;
     font-size: 11px;
-    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
